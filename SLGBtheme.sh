@@ -30,11 +30,13 @@ else
         mkdir /home/pi/tmp
 fi
 #Download and install launching images
-git clone https://github.com/mlopezmad/SuperLopezGB-Launching "/home/pi/tmp"
+cd /home/pi/tmp
+/home/pi/scripts/github-downloader.sh https://github.com/mlopezmad/SuperLopezGB-Launching
 echo "COPYING LAUNCHING IMAGES..."
 sleep 3
-cp -R /home/pi/tmp/* /opt/retropie/configs
-sudo rm -r tmp
+cp -R * /opt/retropie/configs
+cd /home/pi
+rm -r tmp
 echo "Terminated"
 sleep 1
 #Change theme value on EmulationStation config file
