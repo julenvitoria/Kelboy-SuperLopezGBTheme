@@ -4,7 +4,7 @@ cd /home/pi
 if [ -d "/home/pi/.emulationstation/themes/SuperLopezGB/" ]; then
         echo "Super Lopez GB theme was downloaded yet"
         echo "Deleting and redownloading..."
-        sleep 4
+        sleep 2
         sudo rm -r "/home/pi/.emulationstation/themes/SuperLopezGB/"
         sudo mkdir -p "/home/pi/.emulationstation/themes/SuperLopezGB/" && sudo git clone https://github.com/mlopezmad/SuperLopezGB "/home/pi/.emulationstation/themes/SuperLopezGB/"
         #cd "/opt/retropie/configs/all/emulationstation/themes/Super Retroboy/"
@@ -13,7 +13,7 @@ if [ -d "/home/pi/.emulationstation/themes/SuperLopezGB/" ]; then
         #sudo sed -i -e 's/<fontSize>0.04/<fontSize>0.055/g' SuperRetroboy.xml
 else
         echo "Downloading Super Lopez GB theme..."
-        sleep 4
+        sleep 2
         sudo mkdir -p "/home/pi/.emulationstation/themes/SuperLopezGB/" && sudo git clone https://github.com/mlopezmad/SuperLopezGB "/home/pi/.emulationstation/themes/SuperLopezGB/"
         #cd "/opt/retropie/configs/all/emulationstation/themes/Super Retroboy/"
         #sudo sed -i -e 's/<fontSize>0.042/<fontSize>0.06/g' SuperRetroboy.xml
@@ -35,6 +35,7 @@ echo "COPYING LAUNCHING IMAGES..."
 sleep 3
 cp -R /home/pi/tmp/* /opt/retropie/configs
 sudo rm -r tmp
+echo "Terminated"
 #Change theme value on EmulationStation config file
 #sed -i 's/.*<string name="ThemeSet" value=.*/<string name="ThemeSet" value="SuperLopezGB" /> \/>/' /opt/retropie/configs/all/emulationstation/es_settings.cfg
 #Restart EmulationStation
