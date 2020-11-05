@@ -36,6 +36,7 @@ sleep 3
 cp -R /home/pi/tmp/* /opt/retropie/configs
 sudo rm -r tmp
 echo "Terminated"
+sleep 1
 #Change theme value on EmulationStation config file
 #sed -i 's/.*<string name="ThemeSet" value=.*/<string name="ThemeSet" value="SuperLopezGB" /> \/>/' /opt/retropie/configs/all/emulationstation/es_settings.cfg
 #Restart EmulationStation
