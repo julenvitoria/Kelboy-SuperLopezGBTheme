@@ -1,4 +1,4 @@
-# Kelboy-SuperLopezGBtheme
+# Kelboy-SuperLopezGBTheme
 SuperLopezGB Theme &amp; Launching images
 
 Script to install [Super Lopez GB theme by mlopezmad](https://github.com/mlopezmad/SuperLopezGB) and [launchings generateds for each systems](https://github.com/mlopezmad/SuperLopezGB-Launching)
