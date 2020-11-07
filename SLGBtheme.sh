@@ -40,6 +40,6 @@ rm -r tmp
 echo "Terminated"
 sleep 1
 #Change theme value on EmulationStation config file
-#sed -i 's/.*<string name="ThemeSet" value=.*/<string name="ThemeSet" value="SuperLopezGB" /> \/>/' /opt/retropie/configs/all/emulationstation/es_settings.cfg
+sed -i 's/.*<string name="ThemeSet" value=.*/<string name="ThemeSet" value="SuperLopezGB" \/>/' /opt/retropie/configs/all/emulationstation/es_settings.cfg
 #Restart EmulationStation
 /home/pi/scripts/multi_switch.sh --ES-RESTART
