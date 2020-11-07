@@ -1,7 +1,7 @@
-# Kelboy-SuperRetroBoyTheme
-SuperRetroBoy Theme &amp; Launching images
+# Kelboy-SuperLopezGBTheme
+SuperLopezGB Theme &amp; Launching images
 
-Script to install [Super RetroBoy theme by KALEL1981](https://github.com/KALEL1981/es-theme-Super-Retroboy) and launchings generateds for each systems 
+Script to install [Super Lopez GB theme by mlopezmad](https://github.com/mlopezmad/SuperLopezGB) and [launchings generateds for each systems](https://github.com/mlopezmad/SuperLopezGB-Launching)
 
 How to install 
 Connect via ssh or insert this command via terminal on your kelboy 
