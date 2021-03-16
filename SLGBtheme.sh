@@ -34,7 +34,7 @@ cd /home/pi/tmp
 /home/pi/scripts/github-downloader.sh https://github.com/mlopezmad/SuperLopezGB-Launching
 echo "COPYING LAUNCHING IMAGES..."
 sleep 3
-cp -R * /opt/retropie/configs
+cp -R SuperLopezGB-Launching/trunk/* /opt/retropie/configs
 cd /home/pi
 rm -r tmp
 echo "Terminated"
