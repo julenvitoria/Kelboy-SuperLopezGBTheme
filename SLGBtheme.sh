@@ -7,18 +7,20 @@ if [ -d "/home/pi/.emulationstation/themes/SuperLopezGB/" ]; then
         sleep 2
         sudo rm -r "/home/pi/.emulationstation/themes/SuperLopezGB/"
         mkdir -p "/home/pi/.emulationstation/themes/SuperLopezGB/" && sudo git clone https://github.com/mlopezmad/SuperLopezGB "/home/pi/.emulationstation/themes/SuperLopezGB/"
+        sudo chown pi:pi /home/pi/.emulationstation/themes/SuperLopezGB -R
         #cd "/opt/retropie/configs/all/emulationstation/themes/Super Retroboy/"
-        #sudo sed -i -e 's/<fontSize>0.042/<fontSize>0.06/g' SuperRetroboy.xml
-        #sudo sed -i -e 's/<fontSize>0.025/<fontSize>0.035/g' SuperRetroboy.xml
-        #sudo sed -i -e 's/<fontSize>0.04/<fontSize>0.055/g' SuperRetroboy.xml
+        #sed -i -e 's/<fontSize>0.042/<fontSize>0.06/g' SuperRetroboy.xml
+        #sed -i -e 's/<fontSize>0.025/<fontSize>0.035/g' SuperRetroboy.xml
+        #sed -i -e 's/<fontSize>0.04/<fontSize>0.055/g' SuperRetroboy.xml
 else
         echo "Downloading Super Lopez GB theme..."
         sleep 2
         mkdir -p "/home/pi/.emulationstation/themes/SuperLopezGB/" && git clone https://github.com/mlopezmad/SuperLopezGB "/home/pi/.emulationstation/themes/SuperLopezGB/"
+        sudo chown pi:pi /home/pi/.emulationstation/themes/SuperLopezGB -R
         #cd "/opt/retropie/configs/all/emulationstation/themes/Super Retroboy/"
-        #sudo sed -i -e 's/<fontSize>0.042/<fontSize>0.06/g' SuperRetroboy.xml
-        #sudo sed -i -e 's/<fontSize>0.025/<fontSize>0.035/g' SuperRetroboy.xml
-        #sudo sed -i -e 's/<fontSize>0.04/<fontSize>0.055/g' SuperRetroboy.xml
+        #sed -i -e 's/<fontSize>0.042/<fontSize>0.06/g' SuperRetroboy.xml
+        #sed -i -e 's/<fontSize>0.025/<fontSize>0.035/g' SuperRetroboy.xml
+        #sed -i -e 's/<fontSize>0.04/<fontSize>0.055/g' SuperRetroboy.xml
 fi
 
 #make temporal directory
